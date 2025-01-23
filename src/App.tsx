@@ -1,3 +1,5 @@
+import React from "react";
+
 function App(): JSX.Element {
   return (
     <div style={styles.container}>
@@ -8,16 +10,16 @@ function App(): JSX.Element {
         herramientas y soluciones que están transformando el mundo. ¡El futuro
         está aquí, y comienza contigo!
       </p>
-      <button style={styles.button}>Explorar</button>
+      <button style={styles.button}>Explorar Más</button>
     </div>
   );
 }
 
-// Estilos en línea (puedes moverlos a un archivo CSS si lo prefieres)
-const styles = {
+// Define los estilos con el tipo correcto
+const styles: { [key: string]: React.CSSProperties } = {
   container: {
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "column", // Ahora TypeScript sabe que esto es válido
     alignItems: "center",
     justifyContent: "center",
     height: "100vh",
