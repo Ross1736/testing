@@ -8,7 +8,7 @@ function App(): JSX.Element {
         herramientas y soluciones que están transformando el mundo. ¡El futuro
         está aquí, y comienza contigo!
       </p>
-      <button style={styles.button}>Explorar Más</button>
+      <button style={styles.button}>Explorar</button>
     </div>
   );
 }
