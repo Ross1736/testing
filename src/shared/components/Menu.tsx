@@ -13,12 +13,18 @@ function Menu(): JSX.Element {
   return (
     <header className={style.navbar}>
       <div className={style.navbarLogo}>
-        <a href={APP_ROUTES.HOME}>Mi App</a>
+        <Link to={APP_ROUTES.HOME} onClick={toggleMenu}>
+          Mi App
+        </Link>
       </div>
 
       <div className={`${style.navbarLinks} ${isOpen ? style.active : ""}`}>
-        <Link to={APP_ROUTES.HOME}>Inicio</Link>
-        <Link to={APP_ROUTES.KONVA}>Konva</Link>
+        <Link to={APP_ROUTES.HOME} onClick={toggleMenu}>
+          Inicio
+        </Link>
+        <Link to={APP_ROUTES.KONVA} onClick={toggleMenu}>
+          Konva
+        </Link>
       </div>
 
       <button

@@ -2,13 +2,11 @@ import Menu from "../components/Menu";
 
 function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <div>
+    <>
       <Menu />
-
-      <main>{children}</main>
-
-      <footer>Footer</footer>
-    </div>
+      {children}
+      <footer></footer>
+    </>
   );
 }
 

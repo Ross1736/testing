@@ -1,8 +1,9 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { APP_ROUTES } from "./routes/app.routes";
 
-import Home from "../application/pages/Home";
 import Layout from "../shared/layout/Layout";
+import Home from "../application/pages/Home";
+import Konva from "../application/pages/Konva";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
       },
       {
         path: APP_ROUTES.KONVA,
-        element: <div>Konva</div>,
+        element: <Konva />,
         errorElement: <div>Error</div>,
       },
       {
