@@ -1,6 +1,6 @@
 import React from "react";
 
-function App(): JSX.Element {
+function Home(): JSX.Element {
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>🚀 Bienvenido a RossVision</h1>
@@ -52,4 +52,4 @@ const styles: { [key: string]: React.CSSProperties } = {
   },
 };
 
-export default App;
+export default Home;
