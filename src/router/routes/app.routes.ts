@@ -1,5 +1,5 @@
 export const APP_ROUTES: Record<string, string> = {
   HOME: "/",
-  KONVA: "/jonva",
+  KONVA: "/konva",
   NOT_FOUND: "/*",
 };

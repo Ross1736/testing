@@ -1,0 +1,76 @@
+// Estilos generales del navbar
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  color: white;
+}
+
+// Logo
+.navbarLogo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+// Links del menú
+.navbarLinks {
+  display: flex;
+  gap: 1rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #555;
+      border-radius: 4px;
+    }
+  }
+
+  // Estilos para móviles
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    display: none;
+
+    // Clase active para mostrar el menú
+    &.active {
+      display: flex;
+    }
+  }
+}
+
+// Botón sin estilos
+.navbarToggle {
+  display: none; // Oculto por defecto
+  flex-direction: column;
+  cursor: pointer;
+  background: none; // Fondo transparente
+  border: none; // Sin bordes
+  padding: 0; // Sin padding
+  margin: 0; // Sin margen
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  // Mostrar en móviles
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
