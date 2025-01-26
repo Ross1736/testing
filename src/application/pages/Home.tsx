@@ -1,8 +1,8 @@
 import React from "react";
 
-function App(): JSX.Element {
+function Home(): JSX.Element {
   return (
-    <div style={styles.container}>
+    <main style={styles.container}>
       <h1 style={styles.title}>🚀 Bienvenido a RossVision</h1>
       <p style={styles.description}>
         En <strong>TechVision</strong>, exploramos el futuro de la tecnología y
@@ -11,7 +11,7 @@ function App(): JSX.Element {
         está aquí, y comienza contigo!
       </p>
       <button style={styles.button}>Explorar Más</button>
-    </div>
+    </main>
   );
 }
 
@@ -52,4 +52,4 @@ const styles: { [key: string]: React.CSSProperties } = {
   },
 };
 
-export default App;
+export default Home;
