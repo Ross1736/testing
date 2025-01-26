@@ -3,7 +3,7 @@ import React from "react";
 function App(): JSX.Element {
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>🚀 Bienvenido a TechVision</h1>
+      <h1 style={styles.title}>🚀 Bienvenido a RossVision</h1>
       <p style={styles.description}>
         En <strong>TechVision</strong>, exploramos el futuro de la tecnología y
         la innovación. Únete a nosotros para descubrir las últimas tendencias,
